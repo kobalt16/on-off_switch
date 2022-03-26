@@ -1,0 +1,47 @@
+body {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: aliceblue;
+    transition: ease-in .5s;
+}
+
+
+.checkbox {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1;
+    transition: ease-in .5s;
+}
+
+.check {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    transform: translateX(120%);
+    transition: ease-in .3s;
+}
+.checkbox.onActive {
+    background-color: aliceblue;
+}
+.check.onActive {
+    transform: translateX(0%);
+    background-color: blueviolet;
+}
+body.onActive {
+    background-color: blueviolet;
+}
